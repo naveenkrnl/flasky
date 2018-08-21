@@ -1,0 +1,39 @@
+2018-08-20 22:38:39,343 ERROR: Exception on /reset_password_request [GET] [in /home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/naveen/flasklearn/flasky/app/routes.py", line 166, in reset_password_request
+    title='Reset Password', form=form)
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/naveen/flasklearn/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reset_password_request.html
+2018-08-20 22:39:01,331 INFO: Microblog startup [in /home/naveen/flasklearn/flasky/app/__init__.py:46]
+2018-08-21 06:23:50,657 INFO: Microblog startup [in /home/naveen/flasklearn/flasky/app/__init__.py:50]
+2018-08-21 06:25:55,203 INFO: Microblog startup [in /home/naveen/flasklearn/flasky/app/__init__.py:50]
+2018-08-21 06:40:36,774 INFO: Microblog startup [in /home/naveen/flasklearn/flasky/app/__init__.py:54]
+2018-08-21 06:42:11,280 INFO: Microblog startup [in /home/naveen/flasklearn/flasky/app/__init__.py:54]
+2018-08-21 16:21:50,748 INFO: Microblog startup [in /home/naveen/flasklearn/flasky/app/__init__.py:54]
+2018-08-21 16:30:23,005 INFO: Microblog startup [in /home/naveen/flasklearn/flasky/app/__init__.py:54]
+2018-08-21 16:49:41,532 INFO: Microblog startup [in /home/naveen/flasklearn/flasky/app/__init__.py:54]
